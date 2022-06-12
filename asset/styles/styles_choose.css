@@ -1,0 +1,359 @@
+*{
+    padding:0;
+    margin:0;
+}
+#screen{
+    position:absolute;
+    height:100vh;
+    width:100vw;
+    box-sizing: border-box;
+    background-color: #ddd;
+    opacity: 0.95;
+    z-index:3;
+    display: none;
+}
+.back_btn{
+    position: relative;
+    width:30%;
+    /* top:16em; */
+    /* left:0em; */
+    /* z-index:2; */
+}
+.drop_down{
+    padding:1em 0em;
+    width:300px;
+}
+.main_logo{
+    height:100px;
+    position: absolute;
+    z-index:2;
+    padding:10px;
+    border-radius: 30px;
+}
+
+.back_btn:hover{
+    background-color:#fff;
+    /* transition: 0.5s; */
+    color:#008CFF;
+    /* font-size: 16.5px; */
+}
+#screen .zoom_box{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border:2px solid #111111;
+    height:550px;
+    width:550px;
+    background-color: inherit;
+    box-shadow:5px 15px 25px #222;
+}
+#screen >.zoom_box > model-viewer{
+    opacity: 1;
+    z-index: 3;
+    height:550px;
+    width:550px;
+    /* border:2px solid #000; */
+}
+#screen >.zoom_box > .cross{
+    cursor: pointer;
+    z-index: 3;
+    position:absolute;
+    right:0;
+    top:0;
+    transform: translate(50%, -50%);
+    background-color: #006aff;
+    border-radius:50px;
+    padding:2px;
+    height:30px;
+    width:30px;
+    border:2px solid #111;
+}
+.wrapper{
+    background-color: #eef5ff;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items:center;
+    padding:3em;
+}
+
+model-viewer{
+    height:300px;
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+}
+.top_section_choose{
+    position: relative;
+    top:0;
+    right:0;
+    width:100vw;
+    height:20vh;
+    background-image: url("../images/main_shoe.jpg");
+    background-size:cover;
+    background-position:0px;
+    background-repeat: no-repeat;
+    /* background-color: #008CFF; */
+    border-radius: 0 0px 10px 10px;
+    /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+    box-shadow: 5px 5px 50px rgba(68, 68, 68, 0.6);
+
+}
+.top_section_choose .title_choose, .top_section_choose .sub_title_choose{
+    color:#ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1500;
+    font-style: italic;
+    text-align: center;
+    position: relative;
+    /* top:20px; */
+    padding-right:20vw;
+    /* font-family: 'Montserrat Alternates', sans-serif; */
+}
+.top_section_choose .sub_title_choose{
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0px;
+}
+.top_section_choose .title_choose{
+    font-size: 40px;
+    /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+    /* box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6); */
+    /* box-shadow: inset 0 0 10px #000000; inshadow*/
+    /* letter-spacing: 5px; */
+    text-decoration: underline;
+}
+.item{
+    box-shadow: 5px 5px 15px rgba(68, 68, 68, 0.6);
+    position:sticky;
+    background-color: #008CFF;
+    background-image: linear-gradient(#49adff, #2A7FF6);
+    height:355px;
+    width:300px;
+    padding:0;
+    margin: 0;
+    overflow: hidden;
+    margin:20px;
+    border-radius: 20px;
+    transition: all ease-in-out 500ms;
+}
+.options{
+    /* display: inline; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items:space-around;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    background-color: #3580f0;
+    transition: all ease-in-out 1s;
+    /* padding:1em 2em; */
+    font-family: 'Roboto', sans-serif;
+    /* padding:0px 30px; */
+    width:100%;
+    /* margin:20px; */
+}
+.item .desc{
+    transition: all ease-in-out 500ms;
+    color:rgb(17, 17, 17);
+    font-size:15px;
+    background-color: #006aff;
+    font-size: 10px;
+    position: relative;
+    /* outline: 1em transparent solid; */
+    top:-20%;
+    height:125px;
+    width:300px;
+    font-family: 'Lora', serif;
+}
+#shoe-type{
+    transition: all ease-in-out 500ms;
+    /* padding:10px 30px; */
+    /* margin:20px; */
+    width:200px;
+    
+}
+.shoe_type_options{
+    transition: all ease-in-out 500ms;
+    background-color: #006aff;
+    /* padding:10px 30px; */
+    /* margin:20px; */
+    width:200px;
+}
+.desc .content{
+    transition: all ease-in-out 500ms;
+    padding:10px;
+    height:125px;
+    transition: all ease-in-out 500ms;
+    transition-property: background-image;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+.desc .content:hover{
+    /* background-image: linear-gradient(#49adff, #2A7FF6); */
+    background-color:#ffffff;
+}
+.content .optional{
+    transition: all ease-in-out 1000ms;
+    display: none;
+}
+.item .desc .content:hover .optional{
+    display: inline;
+}
+.item .desc .content .content_bar{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    padding:5px;
+    justify-items: center;
+}
+/* font-family: 'Lora', serif;
+font-family: 'Merriweather Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+.item .desc .content .content_bar .shoe_name,
+.item .desc .content .content_bar .shoe_price{
+    font-size: 12px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bolder;
+}
+.item .desc .content .content_bar .shoe_name{
+    text-align: left;
+}
+.item .desc .content .content_bar .shoe_price{
+    text-align: right;
+    align-items: right;
+}
+.card_image_div{
+    cursor: pointer;
+}
+.item .desc .content .card_btn .peep_btn{
+    cursor: pointer;
+    display: block;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding:5px 1em;
+    color:#008CFF;
+    font-family: 'Montserrat', sans-serif;
+    border-radius:20px;
+    font-size: 1em;
+    background-color:#000;
+    color: #fff;
+    border:none; 
+    border-radius:10px; 
+    padding:10px;
+    min-height:30px; 
+    min-width: 120px;
+}
+.item .desc .content .card_btn .peep_btn:hover {
+    background-color:#fff;
+    transition: 0.5s;
+    color:#008CFF;
+    box-shadow: 3px 3px 5px rgba(68, 68, 68, 0.6);
+    font-weight:bolder;
+    border-radius: 14px;
+}
+.item .desc .content .card_btn .peep_btn:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #2A7FF6;
+    transition: 0.7s;
+    box-shadow: 5px 5px 15px rgba(68, 68, 68, 0.6);
+}
+.item .desc .content .card_btn .peep_btn:active {
+    box-shadow:  5px 5px 10px #000000;
+    background-color: #2A7FF6;
+    color:#fff;
+}
+.item .desc .content .card_btn div{
+    background-color: #fff;
+    height:30px;
+    width:30px;
+    z-index:1;
+    border-radius: 10px;
+}
+.item .desc .content .card_btn div img{
+    position:relative;
+    top:50%;
+    left:50%;;
+    transform: translate(-50%,-50%);
+    z-index:2;
+}
+.item .desc .content .card_btn{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.content .content_bar{
+
+}
+.sneaker{
+    background-color: blue;
+}
+.slippers{
+    background-color: blanchedalmond;
+}
+.heels{
+    background-color: red;
+}
+.boots{
+    background-color: rgb(255, 152, 17);
+}
+.chevit{
+    background-color: rgb(126, 219, 191);
+}
+.groofer{
+    background-color: rgb(42, 165, 63);
+}
+.casual{
+    background-color: rgb(105, 53, 235);
+}
+@media only screen and (max-width: 1480px) {
+    .wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (max-width: 1120px) {
+    .wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main_logo{
+        display: none;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #screen .zoom_box{
+        height:400px;
+        width:400px;
+    }
+    #screen >.zoom_box > model-viewer{
+        height:400px;
+        width:400px;
+
+    }
+    #screen >.zoom_box > .cross{
+        height:30px;
+        width:30px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #screen .zoom_box{
+        height:350px;
+        width:350px;
+    }
+    #screen >.zoom_box > model-viewer{
+        height:350px;
+        width:350px;
+
+    }
+    #screen >.zoom_box > .cross{
+        height:30px;
+        width:30px;
+    }
+}

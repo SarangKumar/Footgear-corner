@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footgear Korner</title>
+
+    <!-- javascript -->
+    <script src="../javascript/jquery-3.6.0.min.js"></script>
+    <script src="../javascript/jQuery_choose.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../styles/styles_choose.css">
+    <link rel="stylesheet" href="../styles/styles_home.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500&family=Merriweather+Sans:wght@300&family=Montserrat+Alternates:wght@100&family=Montserrat:wght@100;300;800&family=Poppins:ital,wght@0,100;1,600&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.png">
+</head>
+
+<body>
+    <div id="screen">
+
+        <div class="zoom_box">
+            <div class="cross"><img height="30px" width="30px" src="../images/icons/icons8-close-96 (1).png" alt="">
+            </div>
+            <model-viewer class="" bounds="tight" enable-pan src="../gld/leather_shoes_1_tex1.glb" ar
+                ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                poster="poster.webp" shadow-intensity="1" autoplay>
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+                <!-- <div id="ar-prompt"><img src="https://modelviewer.dev/shared-assets/icons/hand.png"></div> -->
+            </model-viewer>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="sticky">
+        <div class="ham"><img height='30px' src="../images/icons/icons8-menu-90.png" alt=""></div>
+        <div class="sticky_options">
+            <div class="sticky_box"><img height="60px" src="../images/icons/logo2.png" alt=""></div>
+            <div class="sticky_box"></div>
+            <div class="sticky_box">Your search destination</div>
+
+        </div>
+    </div>
+    
+    <img class="main_logo"  height="100px" src="../images/icons/logo1.png" alt="">
+    
+    <div class="top_section_choose">
+        <p class="title_choose">Footgear Korner</p>
+        <p class="sub_title_choose">Your favourite shoe, sneakers, heels, boots, high heels and many more to your
+            screen.</p>
+    </div>
+    <div class="options">
+        <button class="back_btn"><a href="./home.html">Back</a></button>
+        <div class="drop_down">
+            <label for="shoe_type">Footwear Type</label>
+            <select name="shoe_type" id="shoe_type">
+                <option class="shoe_type_options" value="all">All</option>
+                <option class="shoe_type_options" value="leather_shoes">Leather Shoes</option>
+                <option class="shoe_type_options" value="sneakers">Sneakers</option>
+                <option class="shoe_type_options" value="casual">Casual</option>
+                <option class="shoe_type_options" value="groofer">Groofer</option>
+                <option class="shoe_type_options" value="chevit">Chevit</option>
+                <option class="shoe_type_options" value="heels">Heels</option>
+                <option class="shoe_type_options" value="boots">Boots</option>
+                <option class="shoe_type_options" value="slipers">Slippers</option>
+            </select>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="item item1 leather_shoes">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/leather_shoes_1_tex1.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Brown Leather Shoes</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value='../glb/leather_shoes_1_tex1.glb' class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item2 leather_shoes">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/leather_shoes_1_tex2.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Black Leather Shoes</div>
+                        <div class="shoe_price">$22</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value = "../glb/leather_shoes_1_tex2.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item3 leather_shoes">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/leather_shoes_2_tex1.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+            </div> -->
+                </model-viewer>
+
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Coal Black Shoes</div>
+                        <div class="shoe_price">$11</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/leather_shoes_2_tex1.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item4 leather_shoes">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/leather_shoes_2_tex2.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Brown Leather Sneakers</div>
+                        <div class="shoe_price">$35</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/leather_shoes_2_tex2.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item5 leather_shoes">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/leather_shoes_2_tex3.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Marble White Leather Shoes</div>
+                        <div class="shoe_price">$25</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/leather_shoes_2_tex3.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item6 leather_shoes">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/leather_shoes_2_tex4.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Leather Shoes</div>
+                        <div class="shoe_price">$22</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/leather_shoes_2_tex4.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item7 leather_shoes">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/leather_shoes_2_tex5.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Leather shoes</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/leather_shoes_2_tex5.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item8 leather_shoes">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/leather_shoes_3_tex1.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Black formal Shoes</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/leather_shoes_3_tex1.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item9 leather_shoes">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/leather_shoes_3_tex2.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Leathers shoes</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/leather_shoes_3_tex2.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item10 sneaker">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/sneakers_1.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Neon Sneakers</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/sneakers_1.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item11 sneakers">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/sneakers_2_tex1.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Motorsport Sneakers</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/sneakers_2_tex1.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item12 sneakers">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/sneakers_2_tex2.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Motorsport Sneakers</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/sneakers_2_tex2.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item13 sneakers">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/sneakers_2_tex3.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Black Metallic Sneakers</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/sneakers_2_tex3.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item14 sneakers">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/sneakers_4_tex1.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Sneakers</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/sneakers_4_tex1.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item15 sneakers">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/sneakers_4_tex2.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Sneakers</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/sneakers_4_tex2.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item16 sneakers">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/sneakers_4_tex3.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Sneakers</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/sneakers_4_tex3.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item17 sneakers">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/sneakers_4_tex4.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Sneakers</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/sneakers_4_tex4.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item18 sneakers">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/Trainer.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Sneakers</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/Trainer.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item19 boots">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/boots_1.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Heeled Boots</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/boots_1.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item20 boots">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/boots_2_tex1.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Black Leather Boots</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/boots_2_tex1.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item21 boots">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/boots_2_tex2.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Black Metallic Boots</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/boots_2_tex2.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item22 boots">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/boots_2_tex3.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">White Boots</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/boots_2_tex3.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item23 boots">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/boots_3_tex2.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Boots</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/boots_3_tex2.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item24 boots">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/boots_4_tex1.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">High Heeled Red Boots</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/boots_4_tex1.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item25 boots">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/boots_4_tex2.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">High Heeled White Boots</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/boots_4_tex2.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item26 boots">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/boots_5.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Black Ankle Length Boots</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/boots_5" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item27 boots">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/boots_6_tex1.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Ankle Length Boots</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/boots_6_tex1.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item28 slippers">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/Slipper_1_tex1.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">House Slippers</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/Slipper_1_tex1.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item29 slippers">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/Slipper_1_tex2.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">House Slippers</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/Slipper_1_tex2.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item30 slippers">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/Slipper_1_tex3.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Flip Flops</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/Slipper_1_tex3.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item31 heels">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/heels_1_tex1.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Classy Red Heels</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/heels_1_tex1.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item32 heels">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/heels_1_tex2.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Black Formal Heels</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/heels_1_tex2.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item33 heels">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/heels_3.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Black Polkadot Heels</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/heels_3.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item34 heels">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/heels_4.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Red Heels</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/heels_4.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item35 heels">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/heels_5.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Heels</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/heels_5.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item36 heels">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/heels_7_tex1.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Heels</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/heels_7_tex1.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item37 heels">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/heels_7_tex2.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Black Heels</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/heels_7_tex2.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item38 heels">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/heels_7_tex3.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Heels</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/heels_7_tex3.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item39 heels">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/heels_7_tex4.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Heels</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/heels_7_tex4.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item40 slippers">
+            <div class="pic">
+                <model-viewer class="" bounds="tight" enable-pan src="../glb/Slipper_1_tex4.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral"
+                    poster="poster.webp" shadow-intensity="1" autoplay>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <!-- <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div> -->
+                </model-viewer>
+            </div>
+            <div class="desc">
+                <div class="content">
+                    <div class="content_bar">
+                        <div class="shoe_name">Outdoor Slippers</div>
+                        <div class="shoe_price">$20</div>
+                    </div>
+                    <span>Some info about the shoe. </span>
+                    <span class="optional">Some extra text</span>
+                    <br><br>
+                    <div class="card_btn">
+                        <button type="button" value="../glb/Slipper_1_tex4.glb" class="peep_btn">View</button>
+                        <div class="card_image_div"><img class='card_image' height='20px'
+                                src="../images/icons/icons8-heart-96.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_footer">
+        <footer>
+            <div class="footer_info">
+                <img src="../images/icons/icons8-creative-commons-64.png" alt="">
+                <p>Attribution</p>
+                <ul>
+                    <li><a class="anchor" href="https://poly.pizza/m/cs7k_ENAZjQ">Poly.Pizza</a></li>
+                    <li><a class="anchor" target="_blank" href="https://icons8.com">Icons8</a></li>
+                    <li><a class="anchor" target="_blank" href="https://sketchfab.com/">Sketchfab</a></li>
+                    <li><a class="anchor" target="_blank" href="https://unsplash.com/">Unsplash</a></li>
+                </ul>
+            </div>
+            <div class="services">
+                <img src="../images/icons/icons8-services-64.png" alt="">
+                <p>Our Servies</p>
+            </div>
+            <div class="company">
+                <img src="../images/icons/icons8-company-64.png" alt="">
+                <p>Company</p>
+            </div>
+            <div class="follow_us">
+                <img src="../images/icons/icons8-multichannel-64.png" alt="">
+                <p>Follow Us</p>
+                <ul>
+                    <li>
+                        <a class="anchor" href="#">Linkedin</a>
+                        <a href="#"><img class="footer_media"
+                                src="../images/icons/icons8-linkedin-32.png"></img></a>
+                    </li>
+                    <li>
+                        <a class="anchor" href="#">Mail</a>
+                        <a href="#"><img class="footer_media" src="../images/icons/icons8-gmail-login-32.png"
+                                alt=""></a>
+                    </li>
+                    <li>
+                        <a class="anchor" href="#">Insta</a>
+                        <a href="#"><img class="footer_media"
+                                src="../images/icons/icons8-instagram-32.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a class="anchor" href="#">Facebook</a>
+                        <a href="#"><img class="footer_media" src="../images/icons/icons8-facebook-32.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
