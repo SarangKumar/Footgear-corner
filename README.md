@@ -1,2 +1,2 @@
 # Footgear-corner
-This is a website is like a show e commerce website that has 3D models to preview the shoes.
+This is a website with which we can preview the shoe models is 3d for better user experience
