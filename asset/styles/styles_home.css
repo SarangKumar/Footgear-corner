@@ -366,7 +366,7 @@ footer{
         margin-top:20px;
         font-size: 10px;
         padding:1em;
-        width:230px;
+        width:200px;
     }
     .top_section{
         height:30vh;
@@ -427,6 +427,7 @@ footer{
     .company img{
         display: none;
         margin:-20px;
+        padding: 0 3em;
     }
     .services p, 
     .follow_us p,
@@ -441,13 +442,10 @@ footer{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         text-align: center;
-        margin:-10px;gr
+        margin:-10px;
     }
 
-    .follow_us ul li .footer_media,
-    .services ul li .footer_media,
-    .company ul li .footer_media,
-    .footer_info ul li .footer_media{
+    .follow_us ul li .footer_media{
         text-align: center;
         display:inline;
         height:1.6em;
@@ -461,11 +459,9 @@ footer{
     .footer_info ul li .anchor,
     .company ul li .anchor{
         display: block;
-        
+        padding:0 1em;
     }
-
 }
 /* #000000
 #ffffff
 #008CFF
-#2A7FF6 */
