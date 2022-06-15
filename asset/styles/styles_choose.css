@@ -337,19 +337,6 @@ font-family: 'Roboto', sans-serif; */
         height:30px;
         width:30px;
     }
-    .item{
-        height: 284px;
-        width:240px;
-    }
-    .item .desc{
-        top:-46%;
-        height:120px;
-        width:240px;
-    }
-    .desc .content{
-        padding:8px;
-        height:100px;
-    }
 }
 @media only screen and (max-width: 500px) {
     .wrapper{
@@ -377,5 +364,18 @@ font-family: 'Roboto', sans-serif; */
     #screen >.zoom_box > .cross{
         height:30px;
         width:30px;
+    }
+        .item{
+        height: 284px;
+        width:240px;
+    }
+    .item .desc{
+        top:-46%;
+        height:120px;
+        width:240px;
+    }
+    .desc .content{
+        padding:8px;
+        height:100px;
     }
 }
